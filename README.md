@@ -23,6 +23,15 @@ Ethereum keys are the same format on any network, so the Ethereum keys should wo
 
 - PHP must be installed on your operating system (any version, 5 or 7). Don't worry, you will *not* need to know any PHP.
 
+
+curl https://getcomposer.org/installer -o installer.php
+
+php installer.php
+
+php composer.phar install
+
+
+
 - You will need to clone the [`hd-wallet-derive`](https://github.com/dan-da/hd-wallet-derive) tool.
 
 - [`bit`](https://ofek.github.io/bit/) Python Bitcoin library.

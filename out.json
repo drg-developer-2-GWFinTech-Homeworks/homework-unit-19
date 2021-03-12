@@ -1,0 +1,20 @@
+[
+  {
+    "path": "m\/44'\/0'\/0'\/0\/0",
+    "address": "1BpT44A7ZZazHUzsW4CFHLHj8iQcJWvgSQ",
+    "privkey": "L59q6wFZxokZxQnodQdzewccR95vooE63Z1npbi18qwHnA7btEmC",
+    "pubkey": "0362f18746406dff4f6002c42b22ae7893ca68001c9dd405a69e15ec6e69af2753"
+  },
+  {
+    "path": "m\/44'\/0'\/0'\/0\/1",
+    "address": "1JG8TWZZyE7cDMecT9iACkY2VMw5SX5SKw",
+    "privkey": "L424q1bZTU5YbzqVDZAG9SHCZSLFhz6x7txBo1FafbPfQMVCTL6h",
+    "pubkey": "02b7e69ec8efa9c355fffc33352761e775851e343879d0a7b6ebb8d8271c94fe43"
+  },
+  {
+    "path": "m\/44'\/0'\/0'\/0\/2",
+    "address": "137NzMezzBPNBVBrTv1dm8JpXSwZEA5QZT",
+    "privkey": "KyHS7yGhCz9uprmkKTYQDXmsYh7p34wJBJRRb67fZ6jdbKcbLbcG",
+    "pubkey": "02778c0c4d1a3614b335374025dfcf9efe6d87af9d81a93368b8732d4b15aa5575"
+  }
+]
