@@ -1,8 +1,16 @@
 import subprocess
 import json
-
+import bit
+import web3
+from web3 import Web3
+from dotenv import load_dotenv
+from web3.middleware import geth_poa_middleware
+from eth_account import Account
+from bit.network import NetworkAPI
 import os
 from constants import *
+
+load_dotenv()
 
 mnemonic = os.getenv("MNEMONIC", "gown field bottom essence blossom alone mountain panther gain ship memory hurry")
 
@@ -10,9 +18,7 @@ mnemonic = os.getenv("MNEMONIC", "gown field bottom essence blossom alone mounta
 
 def derive_wallets(mnemonic, coin_type):
 
-    p = subprocess.Popen(["echo", "$SHELL"], stdout=subprocess.PIPE, shell=True)
-    out, err = p.communicate()
-    print(out)
+    result = subprocess.run("exit 0", shell=True, check=True)
 
     # p = subprocess.Popen(["echo", "hello world"], stdout=subprocess.PIPE)
     # out, err = p.communicate()
@@ -25,7 +31,7 @@ def derive_wallets(mnemonic, coin_type):
     # args = f"-g --mnemonic=\"{mnemonic}\" --cols=path,address,privkey,pubkey --format=json --coin={coin_type} --numderive=3"
 
     # command = [ "hd-wallet-derive.php", "-g", f"--mnemonic={mnemonic}", "--cols=path,address,privkey,pubkey", "--format=json}", f"--coin={coin_type}", "--numderive=3" ]
-    # command = f"hd-wallet-derive.php -g --mnemonic={mnemonic} --cols=path,address,privkey,pubkey --format=json --coin={coin_type} --numderive=3"
+    # command = f"./derive -g --mnemonic={mnemonic} --cols=path,address,privkey,pubkey --format=json --coin={coin_type} --numderive=3"
     p = subprocess.Popen(args=args, executable=cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
 
     # str(os.getcwd())
@@ -62,5 +68,4 @@ def validate_key(coin_type, privKey):
 
 
 if __name__ == "__main__":
-    import subprocess
     coins = derive_wallets(mnemonic, ETH)
